@@ -1,0 +1,11 @@
+version: 1.0.{build}
+branches:
+  only:
+  - netstandard
+clone_depth: 1
+environment:
+  Appveyor: true
+build_script:
+- ps: >-
+    .\build.ps1
+test: off

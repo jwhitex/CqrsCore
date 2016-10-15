@@ -1,15 +1,30 @@
 ﻿{
-  "version": "1.0.0-*",
-
+  "packOptions": {
+    "summary": "CqrsCore",
+    "owners": [
+      "jacob.white"
+    ],
+    "licenseUrl": "https://github.com/jwhitex/CqrsCore/blob/master/LICENSE",
+    "projectUrl": "https://github.com/jwhitex/CqrsCore",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/jwhitex/CqrsCore"
+    }
+  },
+  "authors": [
+    "Jacob White"
+  ],
+  "description": "Core collection of Cqrs Interfaces.",
+  "version": "0.1.0-*",
   "dependencies": {
     "Autofac": "4.1.1",
-    "Microsoft.CSharp": "4.0.1",
     "NETStandard.Library": "1.6.0"
   },
-
   "frameworks": {
     "netstandard1.6": {
-      "imports": "dnxcore50"
+      "dependencies":{
+        "Microsoft.CSharp": "4.0.1"
+      }
     }
   }
 }
